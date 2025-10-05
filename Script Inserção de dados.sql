@@ -23,5 +23,5 @@ VALUES
 INSERT INTO Pedido (data_pedido, status, idCliente)
 VALUES 
   (NOW(), 'Em processamento', 1),
-  (NOW(), 'Finalizado', 2);
+  (NOW(), 'Entregue', 2);
 
