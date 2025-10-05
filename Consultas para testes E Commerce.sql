@@ -21,9 +21,6 @@ FROM Pedido p
 JOIN Item_Pedido ip ON p.idPedido = ip.idPedido
 GROUP BY p.idPedido;
 
-
-
-
 -- Ordenações com Order By
 -- Lista os produtos ordenados do mais caro para o mais barato
 -- ORDER BY organiza os resultados com base em um campo
