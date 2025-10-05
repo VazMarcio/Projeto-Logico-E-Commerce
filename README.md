@@ -89,39 +89,33 @@ Relacionamentos foram definidos com chaves primárias e estrangeiras para garant
 2. Execute o script `01_criacao_banco.sql`
 3. Execute o script `02_insercao_dados.sql`
 4. Execute o script `03_consultas.sql` para visualizar os dados
+   
 
 ---
 
-## 📊 Exemplo de Saída 
-
-```sql
-SELECT 
-  p.idPedido,
-  SUM(ip.quantidade * ip.preco_unitario) AS total_pedido
-FROM Pedido p
-JOIN Item_Pedido ip ON p.idPedido = ip.idPedido
-GROUP BY p.idPedido;
-
 ## 💡 Aprendizados
+
 Durante o desenvolvimento deste projeto, foram aplicados e reforçados os seguintes conceitos:
 
-Criação de banco de dados relacional com integridade referencial
+- Criação de banco de dados relacional com integridade referencial
+- Uso de comandos SQL como `JOIN`, `GROUP BY`, `ORDER BY`, `ENUM`, `AUTO_INCREMENT`
+- Tratamento de erros comuns como truncamento de dados e violação de chave estrangeira
+- Modelagem lógica e física de dados com diagrama EER
+- Escrita de consultas analíticas para relatórios gerenciais
+- Diagnóstico e correção de falhas em inserções e relacionamentos
+- Validação de dados com `SELECT` e testes de consistência
 
-Uso de comandos SQL como JOIN, GROUP BY, ORDER BY, ENUM, AUTO_INCREMENT
-
-Tratamento de erros comuns como truncamento de dados e violação de chave estrangeira
-
-Modelagem lógica e física de dados com diagrama EER
-
-Escrita de consultas analíticas para relatórios gerenciais
-
-Diagnóstico e correção de falhas em inserções e relacionamentos
-
-Validação de dados com SELECT e testes de consistência
+---
 
 ## 👨‍💻 Autor
-Márcio Vaz
-Projeto desenvolvido no contexto do bootcamp DIO — SQL para E-Commerce
-📍 São Paulo, Brasil — Outubro/2025
-📧 githubmarcio@gmail.com
-🔗 LinkedIn (www.linkedin.com/in/marcioantoniovaz)
+
+**Márcio Vaz**  
+Projeto desenvolvido no contexto do bootcamp DIO — SQL para E-Commerce  
+📍 São Paulo, Brasil — Outubro/2025  
+📧 githubmarcio@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/marcioantoniovaz)
+
+
+
+
+
